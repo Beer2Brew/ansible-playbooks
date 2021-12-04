@@ -1,3 +1,4 @@
+---
 # Test connectivity to a windows host
 # ansible winserver -m win_ping
 
