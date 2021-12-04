@@ -1,4 +1,3 @@
-cat helloworld.yml
 ---
 - name: Hello World!
   hosts: all
