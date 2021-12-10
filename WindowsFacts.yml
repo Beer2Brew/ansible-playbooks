@@ -46,24 +46,24 @@
 #       delegate_to: localhost
 #       run_once: true 
 
-# Create YAML file with Ansible Facts #
-    - name: Create raw YAML
-      copy: 
-        content: | 
-          {% for host in ansible_play_hosts %}
-          {{ hostvars[host].ansible_facts | to_nice_yaml }}
-          {% endfor %}
-        dest: ../documentation/SERVERS/WINDOWS/yaml/server_facts.yml
-      delegate_to: localhost
-      run_once: true
+# # Create YAML file with Ansible Facts #
+#     - name: Create raw YAML
+#       copy: 
+#         content: | 
+#           {% for host in ansible_play_hosts %}
+#           {{ hostvars[host].ansible_facts | to_nice_yaml }}
+#           {% endfor %}
+#         dest: ../documentation/SERVERS/WINDOWS/yaml/server_facts.yml
+#       delegate_to: localhost
+#       run_once: true
 
-# Add Headers to YAML #
-    - name: Header Row
-      lineinfile:
-        path: ../documentation/SERVERS/WINDOWS/yaml/server_facts.yml
-        insertbefore: BOF
-        line: ---        
-      delegate_to: localhost
+# # Add Headers to YAML #
+#     - name: Header Row
+#       lineinfile:
+#         path: ../documentation/SERVERS/WINDOWS/yaml/server_facts.yml
+#         insertbefore: BOF
+#         line: ---        
+#       delegate_to: localhost
 
 # Set Facts #
     - set_fact:
