@@ -13,19 +13,19 @@
 # Ansible tasks #
   tasks:
 
-# Register User Name #
-    - set_fact:
-        windows_user: "{{ Windows_User_Prompt }}"        
-      no_log: true
-      delegate_to: localhost
-      run_once: true 
+# # Register User Name #
+#     - set_fact:
+#         windows_user: "{{ Windows_User_Prompt }}"        
+#       no_log: true
+#       delegate_to: localhost
+#       run_once: true 
 
-# Register Password #
-    - set_fact:        
-        windows_password: "{{ Windows_Password_Prompt }}"
-      no_log: true
-      delegate_to: localhost
-      run_once: true   
+# # Register Password #
+#     - set_fact:        
+#         windows_password: "{{ Windows_Password_Prompt }}"
+#       no_log: true
+#       delegate_to: localhost
+#       run_once: true   
 
 # Gather Ansible Facts About Host #
     - name: Gather Ansible Facts About Host
