@@ -1,5 +1,0 @@
-- name: add computer object to the domain
-  hosts: all
-
-  roles:
-    - ad-computer-registration

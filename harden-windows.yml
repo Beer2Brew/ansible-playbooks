@@ -1,5 +1,0 @@
-- name: Harden Windows
-  hosts: all
-
-  roles:
-    - harden-check-fail

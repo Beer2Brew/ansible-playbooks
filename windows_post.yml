@@ -1,5 +1,0 @@
-- name: windows post configuration
-  hosts: all
-
-  roles:
-    - post-windows

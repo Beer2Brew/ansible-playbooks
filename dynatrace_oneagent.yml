@@ -1,5 +1,0 @@
----
-- name: install dynatrace agent
-  hosts: all
-  roles:
-    - dynatrace.oneagent

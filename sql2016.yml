@@ -1,5 +1,0 @@
-- name: Install SQL 2016
-  hosts: all
-
-  roles:
-    - sql2016

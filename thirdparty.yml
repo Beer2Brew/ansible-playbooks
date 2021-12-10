@@ -1,5 +1,0 @@
-- name: Install Third Party Software
-  hosts: all
-
-  roles:
-  - thirdparty
