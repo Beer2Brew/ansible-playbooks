@@ -1,4 +1,0 @@
----
-
-- include_tasks: multi_network.yml
-  when: (ansible_interfaces | length) > 1

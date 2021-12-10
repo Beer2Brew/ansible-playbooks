@@ -1,4 +1,0 @@
----
-
-- name: enable LCM configuration
-  script: configure_lcm.ps1

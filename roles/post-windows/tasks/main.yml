@@ -1,5 +1,0 @@
----
-
-- include_tasks: share.yml
-
-- include_tasks: ie.yml

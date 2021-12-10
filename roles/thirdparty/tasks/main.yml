@@ -1,8 +1,0 @@
----
-- name: Install latest packages
-  win_chocolatey:
-    name: "{{ item }}"
-    state: latest
-  loop:
-    - googlechrome
-    - "{{ windows_app_name | default('7zip.install') }}"
