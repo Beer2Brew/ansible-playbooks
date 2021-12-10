@@ -1,6 +1,6 @@
 ---
 
-- hosts: Windows
+- hosts: all
 # Prompt for Username and Password #
   # vars_prompt:
   #   - name: Windows_User_Prompt
