@@ -35,16 +35,16 @@
     - debug: 
         msg: "{{ ansible_facts }}"
 
-# Create JSON file with Ansible Facts #
-    - name: Create raw JSON file
-      copy: 
-        content: | 
-          {% for host in ansible_play_hosts %}
-          {{ hostvars[host].ansible_facts | to_nice_json }}
-          {% endfor %}
-        dest: ../documentation/SERVERS/WINDOWS/json/server_facts.json       
-      delegate_to: localhost
-      run_once: true 
+# # Create JSON file with Ansible Facts #
+#     - name: Create raw JSON file
+#       copy: 
+#         content: | 
+#           {% for host in ansible_play_hosts %}
+#           {{ hostvars[host].ansible_facts | to_nice_json }}
+#           {% endfor %}
+#         dest: ../documentation/SERVERS/WINDOWS/json/server_facts.json       
+#       delegate_to: localhost
+#       run_once: true 
 
 # Create YAML file with Ansible Facts #
     - name: Create raw YAML
