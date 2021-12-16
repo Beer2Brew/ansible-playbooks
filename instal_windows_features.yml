@@ -4,5 +4,5 @@
   ansible.windows.win_optional_feature:
     name:
     - NetFx3
-    - Microsoft-Windows-Subsystem-Linux
+    # - Microsoft-Windows-Subsystem-Linux
     state: present
