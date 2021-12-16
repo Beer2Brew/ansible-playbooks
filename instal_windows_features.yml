@@ -1,5 +1,6 @@
 ---
 - name: Install multiple features in one task
+  hosts: all
   ansible.windows.win_optional_feature:
     name:
     - NetFx3
