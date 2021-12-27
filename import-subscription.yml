@@ -1,7 +1,6 @@
 - name: Playbook to configure subscription
   hosts: localhost
 
-- name: Set the license using a file
   tower_license:
   manifest: "/vagrant/tower/manifest_Tower-POC.zip"
   # eula_accepted: True
