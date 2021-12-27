@@ -5,11 +5,14 @@
   collections:
     - ansible.tower # when using ansible.tower
   
-  tasks:
+ tasks:
+    - name: Upload manifest
+      delegate_to: localhost
+      tower_license:
+        manifest: "/vagrant/tower/manifest_Tower-POC.zip"
+        eula_accepted: yes
 
-  - name: Set the license using a file
-    tower_license:
-      manifest: "/vagrant/tower/manifest_Tower-POC.zip"
+
 
 
 
