@@ -1,9 +1,10 @@
 ---
 - hosts: tower
-  collections:
-  - ansible.tower # when using ansible.tower
 
 - name: Set the license using a file
   tower_license:
   # manifest: "/vagrant/tower/manifest_Tower-POC.zip"
+  collections:
+  - ansible.tower # when using ansible.tower
+
     
