@@ -1,0 +1,6 @@
+-host: all
+
+- name: Set the license using a file
+  tower_license:
+  manifest: "./tower/manifest_Tower-POC.zip"
+  eula_accepted: True
