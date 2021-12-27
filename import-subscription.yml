@@ -7,7 +7,7 @@
 
     - name: Upload manifest
       tower_license:
-        manifest: "/vagrant/tower/manifest_Tower-POC.zip"
+        manifest: "/vagrant/tower/manifest_Tower-POC-2.zip"
         eula_accepted: yes
 
 
