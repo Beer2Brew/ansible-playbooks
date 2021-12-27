@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: tower
   collections:
   - ansible.tower # when using ansible.tower
 
