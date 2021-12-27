@@ -4,11 +4,12 @@
   gather_facts: false
   collections:
     - ansible.tower # when using ansible.tower
+  
   tasks:
 
   - name: Set the license using a file
     tower_license:
-    manifest: "/vagrant/tower/manifest_Tower-POC.zip"
+      manifest: "/vagrant/tower/manifest_Tower-POC.zip"
 
 
 
