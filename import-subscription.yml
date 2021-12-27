@@ -1,9 +1,9 @@
-collections:
-- ansible.tower # when using ansible.tower
-
-- name: Playbook to configure subscription
-  hosts: localhost
-
-  tower_license:
-  manifest: "/vagrant/tower/manifest_Tower-POC.zip"
-  # eula_accepted: True
+---
+- hosts: localhost
+  collections:
+  - ansible.tower # when using ansible.tower
+tasks:
+  - name: Playbook to configure subscription
+    tower_license:
+    manifest: "/vagrant/tower/manifest_Tower-POC.zip"
+    eula_accepted: True
