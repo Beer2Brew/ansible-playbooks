@@ -5,7 +5,6 @@
     - ansible.tower # when using ansible.tower
 
     - name: Upload manifest
-      delegate_to: localhost
       tower_license:
         manifest: "/vagrant/tower/manifest_Tower-POC.zip"
         eula_accepted: yes
