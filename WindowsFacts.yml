@@ -53,7 +53,7 @@
 #           {% for host in ansible_play_hosts %}
 #           {{ hostvars[host].ansible_facts | to_nice_yaml }}
 #           {% endfor %}
-#         dest: ../documentation/SERVERS/WINDOWS/yaml/server_facts.yml
+#         dest: ../documentation/SERVERS/WINDOWS/yaml/serve4r_facts.yml
 #       delegate_to: localhost
 #       run_once: true
 
